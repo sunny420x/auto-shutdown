@@ -1,0 +1,11 @@
+[Unit]
+Description=Auto-Shutdown-Server.
+Wants=autoshutdown.timer
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+RestartSec=2
+ExecStart=/usr/bin/python3 /bin/autoshutdown.py
+[Install]
+WantedBy=multi-user.target

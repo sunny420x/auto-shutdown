@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto-Shuwdown-Server.
+Requires=autoshutdown.service
+[Timer]
+Unit=autoshutdown.service
+OnUnitInactiveSec=3s
+OnCalendar=*-*-* *:*:00
+AccuracySec=1s
+[Install]
+WantedBy=timers.target
