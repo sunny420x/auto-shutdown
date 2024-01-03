@@ -12,3 +12,11 @@ The setup should be...
 <p>
 When power-outage happend the router are just going to down and the machine running this script will not able to ping to the router. Meaning power-outage is happend and itself are currently powered by UPS, So it would need to shutdown while UPS is still supplying the power to prevent hardware issues leads to data lost.
 </p>
+<h1>Manual installation by using commands below.</h1>
+<ul>
+    <li>1. cp .service and .timer to /etc/systemd/system/ using command: 
+    "cp autoshutdown.service /etc/systemd/system/autoshutdown.service && cp autoshuwdown.timer      /etc/systemd/system/autoshuwdown.timer"</li>
+    <li>2. mv auto shutdown.py to /bin/</li>
+    <li>3. enable service using command: "sudo systemctl enable autoshutdown"</li>
+    <li>4. start service using command: "sudo systemctl start auto shutdown"</li>
+</ul>
