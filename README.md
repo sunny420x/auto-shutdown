@@ -10,5 +10,5 @@ The setup should be...
     <li>And Router are not connected to UPS.</li>
 </ul>
 <p>
-So when power outage happend the router are just going to down and the machine running this script will not able to ping to the router meaning power outage is happend and itself is currently powered by UPS, So it would need to shutdown while UPS is still supplying the power to prevent hardware issues.
+When power-outage happend the router are just going to down and the machine running this script will not able to ping to the router. Meaning power-outage is happend and itself are currently powered by UPS, So it would need to shutdown while UPS is still supplying the power to prevent hardware issues leads to data lost.
 </p>
