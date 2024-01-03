@@ -8,4 +8,4 @@ if response == 0:
     print(f"{router_ip} is up!")
 else:
     print(f"{router_ip} is down!")
-    os.system("shutdown now")
+    os.system("poweroff")
