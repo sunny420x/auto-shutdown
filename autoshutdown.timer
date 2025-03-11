@@ -3,7 +3,7 @@ Description=Auto-Shuwdown-Server.
 Requires=autoshutdown.service
 [Timer]
 Unit=autoshutdown.service
-OnUnitInactiveSec=3s
+OnUnitInactiveSec=10s
 OnCalendar=*-*-* *:*:00
 AccuracySec=1s
 [Install]
